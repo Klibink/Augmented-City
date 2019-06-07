@@ -22,6 +22,10 @@ public class Player : MonoBehaviour
     public List<GameObject> Droids {
         get => droids;
     }
+    public int Lvl
+    {
+        get => lvl;
+    }
 
 
     // Start is called before the first frame update
@@ -32,7 +36,7 @@ public class Player : MonoBehaviour
 
     public void AddXp(int xp)
     {
-        this.xp = Mathf.Max(0, xp);
+        this.xp += Mathf.Max(0, xp);
     }
 
     public void AddDroid(GameObject droid)

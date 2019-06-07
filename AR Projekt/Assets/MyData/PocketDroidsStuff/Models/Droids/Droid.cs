@@ -16,8 +16,20 @@ public class Droid : MonoBehaviour
     public int Defense { get => defense;  }
     public int Hp { get => hp;  }
 
+    private void Start()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     private void OnMouseDown()
     {
-        
+        PocketDroidsSceneManager[] managers = FindObjectsOfType<PocketDroidsSceneManager>();
+        foreach(PocketDroidsSceneManager pocketDroidsSceneManager in managers)
+        {
+            if (pocketDroidsSceneManager.gameObject.activeSelf)
+            {
+                pocketDroidsSceneManager.droidTapped(this.gameObject);
+            }
+        }
     }
 }
