@@ -800,6 +800,7 @@ GameObject:
   - component: {fileID: 416428894}
   - component: {fileID: 416428893}
   - component: {fileID: 416428897}
+  - component: {fileID: 416428898}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -889,6 +890,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5055589b212e5540aeac25abddfff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &416428898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416428892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a68f92186cf474881a891f0d53ae01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &467274589
@@ -1322,7 +1335,7 @@ MonoBehaviour:
   _autoFireEvent: 1
   _updateInterval: 0.1
   _sendEvent: 0
-  _latitudeLongitude: 50.928018, 6.927995
+  _latitudeLongitude: 50.9280225, 6.928352
   _targetTransform: {fileID: 0}
 --- !u!1 &1095986223
 GameObject:
@@ -1735,6 +1748,62 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!1 &1559399600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559399601}
+  - component: {fileID: 1559399602}
+  - component: {fileID: 1559399603}
+  m_Layer: 0
+  m_Name: Loader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1559399601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559399600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1559399602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559399600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3c2d41b84a44aa4abd7af61510e7366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1559399603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559399600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3aa388afd053a40a63d0004adc0d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1593894961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,6 +2136,7 @@ GameObject:
   - component: {fileID: 4961856752676779}
   - component: {fileID: 114140834904933731}
   - component: {fileID: 114668955318004235}
+  - component: {fileID: 1065619407290950}
   m_Layer: 0
   m_Name: PlayerTarget
   m_TagString: Untagged
@@ -2074,6 +2144,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1065619407290950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065619407290949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 697d8e43b58252346912945b9fe1d393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1080079869057473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,7 +2863,7 @@ MonoBehaviour:
   _options:
     locationOptions:
       latitudeLongitude: 37.784179, -122.401583
-      zoom: 16
+      zoom: 18
     extentOptions:
       extentType: 0
       defaultExtents:
@@ -2957,6 +3039,67 @@ MonoBehaviour:
       - coreOptions:
           sourceId: 
           isActive: 1
+          sublayerName: Phil Cafe
+          geometryType: 0
+          layerName: 
+          snapToTerrain: 1
+          combineMeshes: 0
+        lineGeometryOptions:
+          Width: 0
+        filterOptions:
+          _selectedLayerName: 
+          filters: []
+          combinerType: 0
+        extrusionOptions:
+          _selectedLayerName: 
+          extrusionType: 0
+          extrusionGeometryType: 0
+          propertyName: 
+          propertyDescription: 
+          minimumHeight: 0
+          maximumHeight: 0
+          extrusionScaleFactor: 0
+        colliderOptions:
+          colliderType: 0
+        materialOptions:
+          style: 0
+          texturingType: 0
+          materials: []
+          atlasInfo: {fileID: 0}
+          lightStyleOpacity: 0
+          darkStyleOpacity: 0
+          colorStyleColor: {r: 0, g: 0, b: 0, a: 0}
+          samplePalettes: 0
+          colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials: []
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
+        performanceOptions:
+          isEnabled: 0
+          entityPerCoroutine: 0
+        honorBuildingIdSetting: 0
+        buildingsWithUniqueIds: 0
+        moveFeaturePositionTo: 0
+        MeshModifiers: []
+        GoModifiers: []
+        presetFeatureType: 3
+        _maskValue: 0
+        selectedTypes: 
+        spawnPrefabOptions:
+          prefab: {fileID: 8558005696660974009, guid: 1f23c429dcc469544ba08969af2f65a8,
+            type: 3}
+          scaleDownWithWorld: 0
+        findByType: 2
+        categories: -1
+        nameString: 
+        coordinates:
+        - 50.928018, 6.927995
+        density: 15
+      - coreOptions:
+          sourceId: 
+          isActive: 1
           sublayerName: New Location
           geometryType: 0
           layerName: 
@@ -3006,13 +3149,14 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 0}
+          prefab: {fileID: 5421311341296109296, guid: 49f79e627f9780a4ca7085dd63adb8b5,
+            type: 3}
           scaleDownWithWorld: 0
         findByType: 2
         categories: -1
         nameString: 
         coordinates:
-        - 50.928018, 6.927995
+        - 50.927525, 6.927202
         density: 15
   _tileProvider: {fileID: 0}
 --- !u!114 &114140834904933731

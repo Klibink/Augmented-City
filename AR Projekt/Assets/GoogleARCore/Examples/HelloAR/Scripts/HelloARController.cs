@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // <copyright file="HelloARController.cs" company="Google">
 //
 // Copyright 2017 Google Inc. All Rights Reserved.
@@ -50,7 +50,7 @@ namespace GoogleARCore.Examples.HelloAR
         /// <summary>
         /// A model to place when a raycast from a user touch hits a plane.
         /// </summary>
-        public GameObject AndyPlanePrefab;
+        public GameObject[] AndyPlanePrefab;
 
         /// <summary>
         /// A model to place when a raycast from a user touch hits a feature point.
@@ -67,6 +67,17 @@ namespace GoogleARCore.Examples.HelloAR
         /// otherwise false.
         /// </summary>
         private bool m_IsQuitting = false;
+
+        private bool spawned = false;
+        public int index;
+        private PlayerAR player;
+
+
+        public void Awake()
+        {
+            player = FindObjectOfType<PlayerAR>();
+            index = player.currentTatort;
+        }
 
         /// <summary>
         /// The Unity Update() method.
@@ -93,8 +104,10 @@ namespace GoogleARCore.Examples.HelloAR
             TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
                 TrackableHitFlags.FeaturePointWithSurfaceNormal;
 
-            if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
+            if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit) && spawned == false)
             {
+                spawned = true;
+
                 // Use hit pose and camera pose to check if hittest is from the
                 // back of the plane, if it is, no need to create the anchor.
                 if ((hit.Trackable is DetectedPlane) &&
@@ -113,7 +126,7 @@ namespace GoogleARCore.Examples.HelloAR
                     }
                     else
                     {
-                        prefab = AndyPlanePrefab;
+                        prefab = AndyPlanePrefab[index];
                     }
 
                     // Instantiate Andy model at the hit pose.
@@ -121,7 +134,8 @@ namespace GoogleARCore.Examples.HelloAR
 
                     // Compensate for the hitPose rotation facing away from the raycast (i.e.
                     // camera).
-                    andyObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
+                    
+                    andyObject.transform.Rotate(-90, k_ModelRotation, 0, Space.Self);
 
                     // Create an anchor to allow ARCore to track the hitpoint as understanding of
                     // the physical world evolves.

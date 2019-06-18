@@ -213,10 +213,10 @@ RectTransform:
   m_Father: {fileID: 1624285851}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -331, y: 200}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0.354, y: 1}
+  m_AnchorMax: {x: 0.6534638, y: 1}
+  m_AnchoredPosition: {x: 0, y: -49}
+  m_SizeDelta: {x: 4, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &669851903
 MonoBehaviour:
@@ -271,8 +271,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 669851903}
-        m_MethodName: SceneLoader
+      - m_Target: {fileID: 912871331}
+        m_MethodName: MoveToWorldScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -332,6 +332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ARCore Device (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1772147192650458, guid: c10877f7cd5764de18d46d7b777d1faa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1637996540812124, guid: c10877f7cd5764de18d46d7b777d1faa, type: 3}
       propertyPath: m_TagString
       value: MainCamera
@@ -382,6 +386,36 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 912871327}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &912871330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1637996540812124, guid: c10877f7cd5764de18d46d7b777d1faa,
+    type: 3}
+  m_PrefabInstance: {fileID: 912871327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &912871331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912871330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ccbeeaa59f56249bfcc07b597aa5d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &912871332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912871330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528060189a052e44c8ee1e2907d8d970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &957404639
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlaneDiscovery (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1026997606374626, guid: c539aa4fa1bac4b4da61761b0699b48b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4430574757597842, guid: c539aa4fa1bac4b4da61761b0699b48b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.23008
@@ -609,10 +647,13 @@ MonoBehaviour:
   FirstPersonCamera: {fileID: 912871329}
   DetectedPlanePrefab: {fileID: 1654175882956584, guid: 6a35c744e5010405c847fad90282d2be,
     type: 3}
-  AndyPlanePrefab: {fileID: 1190091649889860, guid: 242a320930b81430ba610f94f9b760c8,
-    type: 3}
+  AndyPlanePrefab:
+  - {fileID: 8558005696660974009, guid: 1f23c429dcc469544ba08969af2f65a8, type: 3}
+  - {fileID: 5421311341296109296, guid: 49f79e627f9780a4ca7085dd63adb8b5, type: 3}
+  - {fileID: 0}
   AndyPointPrefab: {fileID: 1190091649889860, guid: b27e8d7fe70df464188ea5dcf2af0bb3,
     type: 3}
+  index: 0
 --- !u!1001 &1620894913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -716,12 +757,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
