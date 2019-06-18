@@ -9,16 +9,21 @@ public class Droid : MonoBehaviour
     [SerializeField] private int attack = 0;
     [SerializeField] private int defense = 0;
     [SerializeField] private int hp = 0;
+    [SerializeField] private AudioClip crySound;
+
+    private AudioSource audioSource;
 
     public float SpawnRate { get => spawnRate; }
     public float CatchRate { get => catchRate;  }
     public int Attack { get => attack;  }
     public int Defense { get => defense;  }
     public int Hp { get => hp;  }
+    public AudioClip CrySound { get => crySound; }
 
     private void Start()
     {
-        DontDestroyOnLoad(this);
+        //audioSource.GetComponent<AudioSource>();
+        //DontDestroyOnLoad(this);
     }
 
     private void OnMouseDown()
@@ -29,6 +34,18 @@ public class Droid : MonoBehaviour
             if (pocketDroidsSceneManager.gameObject.activeSelf)
             {
                 pocketDroidsSceneManager.droidTapped(this.gameObject);
+            }
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        PocketDroidsSceneManager[] managers = FindObjectsOfType<PocketDroidsSceneManager>();
+        foreach (PocketDroidsSceneManager pocketDroidsSceneManager in managers)
+        {
+            if (pocketDroidsSceneManager.gameObject.activeSelf)
+            {
+                pocketDroidsSceneManager.droidCollision(this.gameObject, other);
             }
         }
     }
