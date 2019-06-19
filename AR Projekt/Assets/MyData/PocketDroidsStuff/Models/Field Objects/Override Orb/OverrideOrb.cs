@@ -93,7 +93,7 @@ public class OverrideOrb : MonoBehaviour
         }
 #endif
 
-#if NOT_UNITY_EDITOR
+#if UNITY_ANDROID
         if (Input.GetTouch(0).phase == TouchPhase.Began)
         {
             inputStatus = InputStatus.Grabbing;
@@ -153,7 +153,7 @@ public class OverrideOrb : MonoBehaviour
 #if UNITY_EDITOR
         result = Input.mousePosition;
 #endif
-#if NOT_UNITY_EDITOR
+#if UNITY_ANDROID
         result = Input.GetTouch(0).position;
 #endif
 
