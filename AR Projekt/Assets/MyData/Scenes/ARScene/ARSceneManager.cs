@@ -16,6 +16,6 @@ public class ARSceneManager : KommissarGOSceneManager
 
     public void MoveToWorldScene()
     {
-        SceneTransitionManager.Instance.GoToScene(KommissarGOConstants.SCENE_WORLD, new List<GameObject>());
+        ARSceneTransitionManager.Instance.GoToScene(KommissarGOConstants.SCENE_WORLD, new List<GameObject>());
     }
 }

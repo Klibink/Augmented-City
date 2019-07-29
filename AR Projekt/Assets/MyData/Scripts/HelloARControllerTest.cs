@@ -1,4 +1,4 @@
-//-----------------------------------------------------------------------
+﻿//-----------------------------------------------------------------------
 // <copyright file="HelloARController.cs" company="Google">
 //
 // Copyright 2017 Google Inc. All Rights Reserved.
@@ -34,7 +34,7 @@ namespace GoogleARCore.Examples.HelloAR
     /// <summary>
     /// Controls the HelloAR example.
     /// </summary>
-    public class HelloARController : MonoBehaviour
+    public class HelloARControllerTest : MonoBehaviour
     {
         /// <summary>
         /// The first-person camera being used to render the passthrough camera image (i.e. AR
@@ -69,14 +69,14 @@ namespace GoogleARCore.Examples.HelloAR
         private bool m_IsQuitting = false;
 
         private bool spawned = false;
-        public int index = 0;
-        private PlayerAR player;
+        //public int index = 0;
+        //private PlayerAR player;
 
 
         public void Awake()
         {
-            player = FindObjectOfType<PlayerAR>();
-            index = player.currentTatort;
+            //player = FindObjectOfType<PlayerAR>();
+            //index = player.currentTatort;
         }
 
         /// <summary>
@@ -126,7 +126,7 @@ namespace GoogleARCore.Examples.HelloAR
                     }
                     else
                     {
-                        prefab = AndyPlanePrefab[index];
+                        prefab = AndyPlanePrefab[0];
                     }
 
                     // Instantiate Andy model at the hit pose.
@@ -134,7 +134,7 @@ namespace GoogleARCore.Examples.HelloAR
 
                     // Compensate for the hitPose rotation facing away from the raycast (i.e.
                     // camera).
-                    
+
                     andyObject.transform.Rotate(-90, k_ModelRotation, 0, Space.Self);
 
                     // Create an anchor to allow ARCore to track the hitpoint as understanding of
