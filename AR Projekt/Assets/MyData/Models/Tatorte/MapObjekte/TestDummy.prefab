@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3651847208579492866}
   - component: {fileID: 6662771845664181797}
   - component: {fileID: 3369402620478540208}
+  - component: {fileID: 1642161048502441858}
   m_Layer: 0
   m_Name: TestDummy
   m_TagString: Untagged
@@ -62,6 +63,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.7406504, y: 2.0736122, z: 1}
   m_Center: {x: 0.0930866, y: 0.5368061, z: 0}
+--- !u!114 &1642161048502441858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202176068187875171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a157ab61497c954a94b34a66829589a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: []
+  collider: {fileID: 0}
 --- !u!1 &2768807997764130019
 GameObject:
   m_ObjectHideFlags: 0

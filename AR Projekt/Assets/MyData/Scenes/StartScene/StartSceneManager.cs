@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAR : MonoBehaviour
+public class StartSceneManager : MonoBehaviour
 {
-    public int currentTatort;
-    public int lvl=0;
+    public GameObject ui;
 
     // Start is called before the first frame update
     void Start()
@@ -17,5 +16,10 @@ public class PlayerAR : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ToggleUI()
+    {
+        ui.SetActive(!ui);
     }
 }

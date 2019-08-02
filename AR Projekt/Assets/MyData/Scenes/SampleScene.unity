@@ -224,8 +224,9 @@ MonoBehaviour:
   DetectedPlanePrefab: {fileID: 1654175882956584, guid: 6a35c744e5010405c847fad90282d2be,
     type: 3}
   AndyPlanePrefab:
-  - {fileID: 1202176068187875171, guid: 43190fb961a80994bb311f4c0d01e367, type: 3}
-  AndyPointPrefab: {fileID: 0}
+  - {fileID: 1018201151362756269, guid: e6a2975fcaf46d145aab8411d48ad402, type: 3}
+  AndyPointPrefab: {fileID: 5660410872294727113, guid: cf9b89d5d5f727f43b0c11a11c238314,
+    type: 3}
 --- !u!1001 &506459736
 PrefabInstance:
   m_ObjectHideFlags: 0

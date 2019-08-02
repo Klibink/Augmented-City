@@ -60,7 +60,7 @@ namespace GoogleARCore.Examples.HelloAR
         /// <summary>
         /// The rotation in degrees need to apply to model when the Andy model is placed.
         /// </summary>
-        private const float k_ModelRotation = 180.0f;
+        private const float k_ModelRotation = /*180.0f*/ 90f;
 
         /// <summary>
         /// True if the app is in the process of quitting due to an ARCore connection error,
@@ -131,6 +131,7 @@ namespace GoogleARCore.Examples.HelloAR
 
                     // Instantiate Andy model at the hit pose.
                     var andyObject = Instantiate(prefab, hit.Pose.position, hit.Pose.rotation);
+                    andyObject.transform.position = new Vector3(0, 0.2f, 3.0f);
 
                     // Compensate for the hitPose rotation facing away from the raycast (i.e.
                     // camera).
