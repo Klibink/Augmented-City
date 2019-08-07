@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tatort : MonoBehaviour
 {
+    //public static Scene currentScene = SceneManager.GetActiveScene();
+    //private string sceneName = currentScene.name;
+    private string sceneName;
+
     public int tatortNummer;
     private GameObject player;
 
@@ -11,6 +16,10 @@ public class Tatort : MonoBehaviour
     void Start()
     {
         //player = FindObjectOfType<PlayerAR>();
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+        
+
     }
 
     // Update is called once per frame
@@ -21,16 +30,17 @@ public class Tatort : MonoBehaviour
 
     private void OnMouseDown()
     {
-        player = GameObject.Find("Loader");
-        player.GetComponent<PlayerAR>().currentTatort = tatortNummer;
+                player = GameObject.Find("Loader");
+                player.GetComponent<PlayerAR>().currentTatort = tatortNummer;
 
-        MapSceneManager[] managers = FindObjectsOfType<MapSceneManager>();
-        foreach (MapSceneManager mapSceneManager in managers)
-        {
-            if (mapSceneManager.gameObject.activeSelf)
-            {
-                mapSceneManager.objectTapped(this.gameObject);
-            }
-        }
+                MapSceneManager[] managers = FindObjectsOfType<MapSceneManager>();
+                foreach (MapSceneManager mapSceneManager in managers)
+                {
+                    if (mapSceneManager.gameObject.activeSelf)
+                    {
+                        mapSceneManager.objectTapped(this.gameObject);
+                    }
+                }
+                  
     }
 }

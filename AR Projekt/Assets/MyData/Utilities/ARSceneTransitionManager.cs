@@ -9,6 +9,10 @@ public class ARSceneTransitionManager : Singleton<ARSceneTransitionManager>
 
     public void GoToScene(string sceneName, List<GameObject> objectsToMove)
     {
+        Scene scene = SceneManager.GetActiveScene();
+        int count = scene.GetRootGameObjects().Length;
+        string name = scene.GetRootGameObjects()[0].name;
+        Debug.LogFormat("{0} root objects in Scene, first one called {1}", count, name);
         StartCoroutine(LoadScene(sceneName, objectsToMove));
     }
 
