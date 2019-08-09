@@ -30,6 +30,8 @@ public class TatortBeweisItem : MonoBehaviour
                     }
 
                     player.GetComponent<PlayerAR>().AddToInventory(this.gameObject);
+                    //Übergangslösung, die abhängig vom level des Spielers Objekte dem Inventar hinzufügt
+                    player.GetComponent<PlayerAR>().AddLvl();
 
                     ARSceneManager[] managers = FindObjectsOfType<ARSceneManager>();
                     foreach (ARSceneManager arSceneManager in managers)

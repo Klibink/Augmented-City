@@ -1,21 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Assertions;
 
-public class TatortFactory : Singleton<TatortFactory>
+public class Beweise : MonoBehaviour
 {
-    private PlayerAR player;
     public GameObject[] tatortFunde;
     private bool b1gefunden = false, b2gefunden = false, b3gefunden = false;
-    //private GameObject player;
-    private int itemNummer=0;
+    private GameObject player;
+    private int itemNummer;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameManagerAR.Instance.CurrentPlayer;
-        Assert.IsNotNull(player);
+        player = GameObject.Find("Loader");
     }
 
     // Update is called once per frame
@@ -27,16 +25,16 @@ public class TatortFactory : Singleton<TatortFactory>
                 if (!b1gefunden)
                 {
                     b1gefunden = true;
-                    player.GetComponent<PlayerAR>().AddToInventory(tatortFunde[0]);
+                    player.GetComponent<PlayerAR>().AddToInventory(tatortFunde[itemNummer]);
                     itemNummer++;
-
+                    
                 }
                 break;
             case 3:
                 if (!b2gefunden)
                 {
                     b2gefunden = true;
-                    player.GetComponent<PlayerAR>().AddToInventory(tatortFunde[1]);
+                    player.GetComponent<PlayerAR>().AddToInventory(tatortFunde[itemNummer]);
                     itemNummer++;
                 }
                 break;
@@ -44,7 +42,7 @@ public class TatortFactory : Singleton<TatortFactory>
                 if (!b3gefunden)
                 {
                     b3gefunden = true;
-                    player.GetComponent<PlayerAR>().AddToInventory(tatortFunde[2]);
+                    player.GetComponent<PlayerAR>().AddToInventory(tatortFunde[itemNummer]);
                     itemNummer++;
                 }
                 break;

@@ -34,4 +34,9 @@ public class PlayerAR : MonoBehaviour
     {
         inventoryObjects.Add(objectToAdd);
     }
+
+    public void AddLvl()
+    {
+        lvl += 1;
+    }
 }

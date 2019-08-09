@@ -7,6 +7,12 @@ public class MapSceneManager : KommissarGOSceneManager
 {
     private GameObject arObject;
     private AsyncOperation loadScene;
+    private MapSceneStatus status = MapSceneStatus.OnMap;
+
+    public MapSceneStatus Status
+    {
+        get => status;
+    }
 
     public override void objectTapped(GameObject arObject)
     {
@@ -31,6 +37,34 @@ public class MapSceneManager : KommissarGOSceneManager
     void Update()
     {
 
+    }
+
+    public void SetDefaultStatus()
+    {
+        status = MapSceneStatus.OnMap;
+    }
+
+    public void SetMenuStatus()
+    {
+        if (status != MapSceneStatus.InMenu)
+        {
+            status = MapSceneStatus.InMenu;
+        }
+        else
+        {
+            status = MapSceneStatus.OnMap;
+        }
+
+    }
+
+    public void SetInventarStatus()
+    {
+        status = MapSceneStatus.InInventory;
+    }
+
+    public void SetNotizenStatus()
+    {
+        status = MapSceneStatus.InNotizen;
     }
 
 

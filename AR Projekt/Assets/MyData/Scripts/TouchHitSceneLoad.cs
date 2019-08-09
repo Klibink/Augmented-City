@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class TouchHitSceneLoad : MonoBehaviour
 {
+    private GameObject player;
     //public Material hitMaterial;
     // Start is called before the first frame update
     void Start()
     {
-
+        player = GameObject.Find("Loader");
     }
 
     // Update is called once per frame
@@ -23,7 +24,9 @@ public class TouchHitSceneLoad : MonoBehaviour
             {
                 if(hit.transform == this.transform)
                 {
-                    SceneManager.LoadScene(1);
+
+                    player.GetComponent<PlayerAR>().AddToInventory(this.gameObject);
+                    SceneManager.LoadScene(0);
                 }
             }
         }
