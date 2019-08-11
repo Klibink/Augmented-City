@@ -10,7 +10,7 @@ public class PlayerData
     private int requiredXp;
     private int levelBase;
     private int lvl;
-    private List<DroidData> droids;
+    private List<DroidData> droids = new List<DroidData>();
 
     public int Xp { get => xp;  }
     public int RequiredXp { get => requiredXp; }

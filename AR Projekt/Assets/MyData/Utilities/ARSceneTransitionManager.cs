@@ -27,7 +27,7 @@ public class ARSceneTransitionManager : Singleton<ARSceneTransitionManager>
         Scene sceneToLoad = SceneManager.GetSceneByName(sceneName);
         foreach (GameObject obj in objectsToMove)
         {
-            SceneManager.MoveGameObjectToScene(obj, sceneToLoad);
+            //SceneManager.MoveGameObjectToScene(obj, sceneToLoad);
         }
         yield return null;
     }

@@ -6,6 +6,7 @@ public class TatortBeweisItem : MonoBehaviour
 {
     private GameObject player;
     public Material hitMaterial;
+    public Item itemType;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +30,10 @@ public class TatortBeweisItem : MonoBehaviour
                         rig.GetComponent<MeshRenderer>().material = hitMaterial;
                     }
 
-                    player.GetComponent<PlayerAR>().AddToInventory(this.gameObject);
+                    player.GetComponent<PlayerAR>().AddToInventory(itemType);
+                    //player.GetComponent<PlayerAR>().AddToInventory(this.gameObject);
                     //Übergangslösung, die abhängig vom level des Spielers Objekte dem Inventar hinzufügt
-                    player.GetComponent<PlayerAR>().AddLvl();
+                    //player.GetComponent<PlayerAR>().AddLvl();
 
                     ARSceneManager[] managers = FindObjectsOfType<ARSceneManager>();
                     foreach (ARSceneManager arSceneManager in managers)

@@ -74,13 +74,16 @@ public class Player : MonoBehaviour
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(path, FileMode.Open);
-            PlayerData data = (PlayerData)bf.Deserialize(file);
+            if (file.Length > 0)
+            {
+                PlayerData data = (PlayerData)bf.Deserialize(file);
+                xp = data.Xp;
+                requiredXp = data.RequiredXp;
+                levelBase = data.LevelBase;
+                lvl = data.Lvl;
+            }
             file.Close();
 
-            xp = data.Xp;
-            requiredXp = data.RequiredXp;
-            levelBase = data.LevelBase;
-            lvl = data.Lvl;
 
             //Import player droids
         }

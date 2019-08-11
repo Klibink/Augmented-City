@@ -6,6 +6,7 @@ public class PlayerAR : MonoBehaviour
 {
     public int currentTatort;
     public int lvl=0;
+    public List<Item> inventory = new List<Item>();
 
     public List<GameObject> inventoryObjects = new List<GameObject>();
 
@@ -23,11 +24,12 @@ public class PlayerAR : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i < inventoryObjects.Count; i++)
-        {
-            Debug.Log(inventoryObjects[i] + " " + "i = " + i);
-        }
-        
+
+    }
+
+    public void AddToInventory(Item item)
+    {
+        inventory.Add(item);
     }
 
     public void AddToInventory(GameObject objectToAdd)
