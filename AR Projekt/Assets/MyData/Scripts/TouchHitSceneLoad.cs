@@ -25,8 +25,8 @@ public class TouchHitSceneLoad : MonoBehaviour
                 if(hit.transform == this.transform)
                 {
 
-                    player.GetComponent<PlayerAR>().AddToInventory(this.gameObject);
-                    SceneManager.LoadScene(0);
+                    //player.GetComponent<PlayerAR>().AddToInventory(this.gameObject);
+                    SceneManager.LoadScene("MapScene");
                 }
             }
         }

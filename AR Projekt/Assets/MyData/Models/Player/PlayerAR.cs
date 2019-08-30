@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerAR : MonoBehaviour
 {
     public int currentTatort;
-    public int lvl=0;
+    //Default Level ist 0
+    public int lvl=1;
     public List<Item> inventory = new List<Item>();
 
     public List<GameObject> inventoryObjects = new List<GameObject>();
