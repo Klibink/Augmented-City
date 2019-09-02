@@ -6,15 +6,18 @@ public class PlayerAR : MonoBehaviour
 {
     public int currentTatort;
     //Default Level ist 0
-    public int lvl=1;
+    public int lvl=0;
     public List<Item> inventory = new List<Item>();
 
     public List<GameObject> inventoryObjects = new List<GameObject>();
+    private bool hinweis1Gesehen = false, hinweis2Gesehen = false;
 
     public List<GameObject> InventoryObjects
     {
         get => inventoryObjects;
     }
+    public bool Hinweis1Gesehen { get => hinweis1Gesehen; set => hinweis1Gesehen = value; }
+    public bool Hinweis2Gesehen { get => hinweis2Gesehen; set => hinweis2Gesehen = value; }
 
     // Start is called before the first frame update
     void Start()

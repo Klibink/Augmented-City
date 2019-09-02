@@ -611,6 +611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1533514695}
   - component: {fileID: 1533514696}
+  - component: {fileID: 1533514697}
   m_Layer: 0
   m_Name: Example Controller (1)
   m_TagString: Untagged
@@ -639,7 +640,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533514694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26074b15f9c13404d858bfedb8b8c00c, type: 3}
   m_Name: 
@@ -653,6 +654,27 @@ MonoBehaviour:
   - {fileID: 1202176068187875171, guid: 43190fb961a80994bb311f4c0d01e367, type: 3}
   AndyPointPrefab: {fileID: 1190091649889860, guid: b27e8d7fe70df464188ea5dcf2af0bb3,
     type: 3}
+  index: 0
+--- !u!114 &1533514697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533514694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6cfc5d336fc914986ad83104f89cf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirstPersonCamera: {fileID: 912871329}
+  DetectedPlanePrefab: {fileID: 1654175882956584, guid: 6a35c744e5010405c847fad90282d2be,
+    type: 3}
+  AndyPlanePrefab:
+  - {fileID: 8466223659345615632, guid: 059cbceb2edbad34699b638d71c89b0c, type: 3}
+  - {fileID: 5421311341296109296, guid: 49f79e627f9780a4ca7085dd63adb8b5, type: 3}
+  - {fileID: 1202176068187875171, guid: 43190fb961a80994bb311f4c0d01e367, type: 3}
+  AndyPointPrefab: {fileID: 0}
   index: 0
 --- !u!1001 &1620894913
 PrefabInstance:

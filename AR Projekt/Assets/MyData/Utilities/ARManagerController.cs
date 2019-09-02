@@ -34,7 +34,7 @@ namespace GoogleARCore.Examples.HelloAR
     /// <summary>
     /// Controls the HelloAR example.
     /// </summary>
-    public class HelloARControllerTest : MonoBehaviour
+    public class ARManagerController : MonoBehaviour
     {
         /// <summary>
         /// The first-person camera being used to render the passthrough camera image (i.e. AR
@@ -60,7 +60,7 @@ namespace GoogleARCore.Examples.HelloAR
         /// <summary>
         /// The rotation in degrees need to apply to model when the Andy model is placed.
         /// </summary>
-        private const float k_ModelRotation = /*180.0f*/ 90f;
+        private const float k_ModelRotation = 180.0f;
 
         /// <summary>
         /// True if the app is in the process of quitting due to an ARCore connection error,
@@ -69,14 +69,14 @@ namespace GoogleARCore.Examples.HelloAR
         private bool m_IsQuitting = false;
 
         private bool spawned = false;
-        //public int index = 0;
-        //private PlayerAR player;
+        public int index = 0;
+        private PlayerAR player;
 
 
         public void Awake()
         {
-            //player = FindObjectOfType<PlayerAR>();
-            //index = player.currentTatort;
+            player = FindObjectOfType<PlayerAR>();
+            index = player.currentTatort;
         }
 
         /// <summary>
@@ -126,13 +126,11 @@ namespace GoogleARCore.Examples.HelloAR
                     }
                     else
                     {
-                        prefab = AndyPlanePrefab[0];
+                        prefab = AndyPlanePrefab[index];
                     }
 
                     // Instantiate Andy model at the hit pose.
-                    Vector3 wantedPosition = new Vector3(hit.Pose.position.x,hit.Pose.position.y + 1f, hit.Pose.position.z);
-                    var andyObject = Instantiate(prefab, /*hit.Pose.position*/wantedPosition, hit.Pose.rotation);
-                    //andyObject.transform.position = new Vector3(0, 0.2f, 3.0f);
+                    var andyObject = Instantiate(prefab, hit.Pose.position, hit.Pose.rotation);
 
                     // Compensate for the hitPose rotation facing away from the raycast (i.e.
                     // camera).

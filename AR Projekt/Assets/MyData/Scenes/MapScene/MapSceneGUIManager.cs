@@ -8,6 +8,9 @@ public class MapSceneGUIManager : MonoBehaviour
     [SerializeField] private GameObject menuCanvas;
     [SerializeField] private GameObject inventarCanvas;
     [SerializeField] private GameObject notizenCanvas;
+    [SerializeField] private GameObject[] hinweisCanvas;
+
+    private bool firstOpened = true;
 
     // Start is called before the first frame update
     void Start()
@@ -24,12 +27,22 @@ public class MapSceneGUIManager : MonoBehaviour
                 menuCanvas.SetActive(false);
                 inventarCanvas.SetActive(false);
                 notizenCanvas.SetActive(false);
+                if (!GameObject.Find("Loader").GetComponent<PlayerAR>().Hinweis1Gesehen)
+                {
+                    hinweisCanvas[0].SetActive(true);
+                    GameObject.Find("Loader").GetComponent<PlayerAR>().Hinweis1Gesehen = true;
+                }
                 break;
 
             case MapSceneStatus.InMenu:
                 menuCanvas.SetActive(true);
                 inventarCanvas.SetActive(false);
                 notizenCanvas.SetActive(false);
+                if (!GameObject.Find("Loader").GetComponent<PlayerAR>().Hinweis2Gesehen)
+                {
+                    hinweisCanvas[1].SetActive(true);
+                    GameObject.Find("Loader").GetComponent<PlayerAR>().Hinweis2Gesehen = true;
+                }
                 break;
 
             case MapSceneStatus.InInventory:
@@ -63,5 +76,18 @@ public class MapSceneGUIManager : MonoBehaviour
     public void ToggleNotizen()
     {
         notizenCanvas.SetActive(!notizenCanvas.activeSelf);
+    }
+
+    public void ToggleHinweise()
+    {
+        for(int i = 0; i < hinweisCanvas.Length; i++)
+        {
+            if (hinweisCanvas[i].activeSelf)
+            {
+                hinweisCanvas[i].SetActive(!hinweisCanvas[i].activeSelf);
+            }
+        }
+
+        
     }
 }

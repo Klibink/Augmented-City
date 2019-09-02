@@ -21,9 +21,31 @@ public class ToggleColliderAndMesh : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (player.GetComponent<PlayerAR>().lvl == this.transform.GetComponent<Tatort>().tatortNummer)
+        {
+            foreach (Renderer r in rend)
+            {
+                r.enabled = true;
+            }
+            //rend.enabled = true;
+            collider.enabled = true;
+        }
+        else
+        {
+            foreach (Renderer r in rend)
+            {
+                r.enabled = false;
+            }
+            //rend.enabled = false;
+            collider.enabled = false;
+        }
+
+
+        /*
         switch (player.GetComponent<PlayerAR>().lvl)
         {
             case 0:
+                if(player.GetComponent<PlayerAR>().lvl==this.transform.GetComponent<Tatort>().tatortNummer)
                 foreach(Renderer r in rend)
                 {
                     r.enabled = false;
@@ -55,6 +77,8 @@ public class ToggleColliderAndMesh : MonoBehaviour
             default:
 
                 break;
-        }
+                
+
+        }*/
     }
 }
