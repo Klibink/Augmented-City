@@ -135,7 +135,7 @@ namespace GoogleARCore.Examples.HelloAR
                     // Compensate for the hitPose rotation facing away from the raycast (i.e.
                     // camera).
 
-                    andyObject.transform.Rotate(-90, k_ModelRotation, 0, Space.Self);
+                    andyObject.transform.Rotate(/*-90*/0, k_ModelRotation, 0, Space.Self);
 
                     // Create an anchor to allow ARCore to track the hitpoint as understanding of
                     // the physical world evolves.
