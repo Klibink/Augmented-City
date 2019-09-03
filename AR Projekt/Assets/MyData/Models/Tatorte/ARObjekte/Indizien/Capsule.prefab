@@ -123,3 +123,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitMaterial: {fileID: 2100000, guid: c2eb61491fc5b104da1a7389249e7736, type: 2}
+  itemType: 0
