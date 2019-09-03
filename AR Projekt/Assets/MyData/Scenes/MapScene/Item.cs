@@ -1,8 +1,8 @@
 ﻿public enum Item
 {
-    Messer,
-    Axt,
-    Speer
+    Krone,
+    Feder,
+    Spiegel
 }
 
 static class ItemHelper
@@ -11,11 +11,11 @@ static class ItemHelper
     {
         switch (item)
         {
-            case Item.Messer:
+            case Item.Krone:
                 return "messer.png";
-            case Item.Axt:
+            case Item.Feder:
                 return "axt.png";
-            case Item.Speer:
+            case Item.Spiegel:
                 return "speer.png";
             default:
                 return "Item nicht bekannt";
@@ -27,11 +27,11 @@ static class ItemHelper
     {
         switch (item)
         {
-            case Item.Messer:
+            case Item.Krone:
                 return 0;
-            case Item.Axt:
+            case Item.Feder:
                 return 1;
-            case Item.Speer:
+            case Item.Spiegel:
                 return 2;
             default:
                 return 0;
