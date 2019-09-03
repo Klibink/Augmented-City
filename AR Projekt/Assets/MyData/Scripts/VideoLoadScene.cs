@@ -10,6 +10,12 @@ public class VideoLoadScene : MonoBehaviour
     public VideoPlayer Vp;
     void Start()
     {
+        Screen.orientation = ScreenOrientation.LandscapeRight;
+        Screen.autorotateToLandscapeLeft = true;
+        Screen.autorotateToLandscapeRight = true;
+        Screen.autorotateToPortrait = false;
+        Screen.autorotateToPortraitUpsideDown = false;
+        Screen.orientation = ScreenOrientation.AutoRotation;
         Vp.loopPointReached += EndReached;
     }
 
@@ -20,6 +26,9 @@ public class VideoLoadScene : MonoBehaviour
     }
     void EndReached(VideoPlayer vp)
     {
+        Screen.autorotateToPortrait = true;
+        Screen.autorotateToPortraitUpsideDown = true;
+        Screen.orientation = ScreenOrientation.AutoRotation;
         SceneManager.LoadScene("StartScene");
     }
 }
