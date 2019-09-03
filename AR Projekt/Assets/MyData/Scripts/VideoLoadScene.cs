@@ -20,7 +20,6 @@ public class VideoLoadScene : MonoBehaviour
     }
     void EndReached(VideoPlayer vp)
     {
-        Debug.Log("loadScene");
         SceneManager.LoadScene("StartScene");
     }
 }
