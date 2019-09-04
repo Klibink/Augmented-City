@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StartSceneManager : MonoBehaviour
 {
-    public GameObject ui;
+    public GameObject ui1, ui2;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +18,9 @@ public class StartSceneManager : MonoBehaviour
         
     }
 
-    public void ToggleUI()
+    public void ToggleUI(GameObject ui1, GameObject ui2)
     {
-        ui.SetActive(!ui);
+        ui1.SetActive(!ui1);
+        ui2.SetActive(!ui2);
     }
 }

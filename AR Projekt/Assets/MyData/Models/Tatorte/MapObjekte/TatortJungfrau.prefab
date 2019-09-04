@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921e6a1ac419d324fb4d790b174f5c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tatortNummer: 0
+  tatortNummer: 2
 --- !u!114 &2335955619613940135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,10 +707,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5056764035044131300}
     m_Modifications:
-    - target: {fileID: 100000, guid: 14987c031123b98408a165a8bf1288d4, type: 3}
-      propertyPath: m_Name
-      value: blood6
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 14987c031123b98408a165a8bf1288d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.04022941
@@ -766,6 +762,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 14987c031123b98408a165a8bf1288d4, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.010221105
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 14987c031123b98408a165a8bf1288d4, type: 3}
+      propertyPath: m_Name
+      value: blood6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14987c031123b98408a165a8bf1288d4, type: 3}
@@ -857,14 +857,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5056764035044131300}
     m_Modifications:
-    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
-      propertyPath: m_Name
-      value: blood1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.1527706
@@ -921,6 +913,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09946286
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
+      propertyPath: m_Name
+      value: blood1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
 --- !u!4 &4355363176554601702 stripped
@@ -936,14 +936,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5056764035044131300}
     m_Modifications:
-    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
-      propertyPath: m_Name
-      value: blood1 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1392294
@@ -999,6 +991,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09946288
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
+      propertyPath: m_Name
+      value: blood1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
@@ -1090,10 +1090,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5056764035044131300}
     m_Modifications:
-    - target: {fileID: 100012, guid: 206e90c123b69414da05624393d54c95, type: 3}
-      propertyPath: m_Name
-      value: car
-      objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 206e90c123b69414da05624393d54c95, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.2242294
@@ -1138,6 +1134,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 206e90c123b69414da05624393d54c95, type: 3}
+      propertyPath: m_Name
+      value: car
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206e90c123b69414da05624393d54c95, type: 3}
 --- !u!4 &6524522695655868572 stripped
@@ -1153,11 +1153,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5056764035044131300}
     m_Modifications:
-    - target: {fileID: 6407172914969687711, guid: efb49c0a9e9192d45b5f1d40daaf5d32,
-        type: 3}
-      propertyPath: m_Name
-      value: shard
-      objectReference: {fileID: 0}
     - target: {fileID: 6407172914969455295, guid: efb49c0a9e9192d45b5f1d40daaf5d32,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1218,6 +1213,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.29999998
       objectReference: {fileID: 0}
+    - target: {fileID: 6407172914969687711, guid: efb49c0a9e9192d45b5f1d40daaf5d32,
+        type: 3}
+      propertyPath: m_Name
+      value: shard
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efb49c0a9e9192d45b5f1d40daaf5d32, type: 3}
 --- !u!4 &2919726324809003569 stripped
@@ -1233,11 +1233,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5056764035044131300}
     m_Modifications:
-    - target: {fileID: 5246769400988665388, guid: fa3994182f60874418a6a1719f57e8e2,
-        type: 3}
-      propertyPath: m_Name
-      value: BaseMesh_Anim
-      objectReference: {fileID: 0}
     - target: {fileID: 5246769400988965388, guid: fa3994182f60874418a6a1719f57e8e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1292,6 +1287,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246769400988665388, guid: fa3994182f60874418a6a1719f57e8e2,
+        type: 3}
+      propertyPath: m_Name
+      value: BaseMesh_Anim
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa3994182f60874418a6a1719f57e8e2, type: 3}

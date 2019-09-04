@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitMaterial: {fileID: 2100000, guid: c2eb61491fc5b104da1a7389249e7736, type: 2}
-  itemType: 0
+  itemType: 2
 --- !u!1 &7337516485586641496
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,10 +514,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4479075152666908989}
     m_Modifications:
-    - target: {fileID: 100012, guid: 206e90c123b69414da05624393d54c95, type: 3}
-      propertyPath: m_Name
-      value: car
-      objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 206e90c123b69414da05624393d54c95, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.2242294
@@ -562,6 +558,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 206e90c123b69414da05624393d54c95, type: 3}
+      propertyPath: m_Name
+      value: car
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206e90c123b69414da05624393d54c95, type: 3}
 --- !u!4 &2064617630623074378 stripped
@@ -577,11 +577,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4479075152666908989}
     m_Modifications:
-    - target: {fileID: 5246769400988665388, guid: fa3994182f60874418a6a1719f57e8e2,
-        type: 3}
-      propertyPath: m_Name
-      value: BaseMesh_Anim
-      objectReference: {fileID: 0}
     - target: {fileID: 5246769400988965388, guid: fa3994182f60874418a6a1719f57e8e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -637,6 +632,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5246769400988665388, guid: fa3994182f60874418a6a1719f57e8e2,
+        type: 3}
+      propertyPath: m_Name
+      value: BaseMesh_Anim
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa3994182f60874418a6a1719f57e8e2, type: 3}
 --- !u!4 &8817036119786624523 stripped
@@ -652,11 +652,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4479075152666908989}
     m_Modifications:
-    - target: {fileID: 6407172914969687711, guid: efb49c0a9e9192d45b5f1d40daaf5d32,
-        type: 3}
-      propertyPath: m_Name
-      value: shard
-      objectReference: {fileID: 0}
     - target: {fileID: 6407172914969455295, guid: efb49c0a9e9192d45b5f1d40daaf5d32,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -716,6 +711,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.29999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407172914969687711, guid: efb49c0a9e9192d45b5f1d40daaf5d32,
+        type: 3}
+      propertyPath: m_Name
+      value: shard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efb49c0a9e9192d45b5f1d40daaf5d32, type: 3}
@@ -882,14 +882,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4479075152666908989}
     m_Modifications:
-    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
-      propertyPath: m_Name
-      value: blood1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.1527706
@@ -945,6 +937,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09946286
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
+      propertyPath: m_Name
+      value: blood1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
@@ -1036,10 +1036,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4479075152666908989}
     m_Modifications:
-    - target: {fileID: 100000, guid: 14987c031123b98408a165a8bf1288d4, type: 3}
-      propertyPath: m_Name
-      value: blood6
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 14987c031123b98408a165a8bf1288d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.04022941
@@ -1096,6 +1092,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.010221105
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 14987c031123b98408a165a8bf1288d4, type: 3}
+      propertyPath: m_Name
+      value: blood6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14987c031123b98408a165a8bf1288d4, type: 3}
 --- !u!4 &8817036118949086721 stripped
@@ -1111,14 +1111,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4479075152666908989}
     m_Modifications:
-    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
-      propertyPath: m_Name
-      value: blood1 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1392294
@@ -1174,6 +1166,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09946288
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
+      propertyPath: m_Name
+      value: blood1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
