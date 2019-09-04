@@ -6,7 +6,7 @@ using TMPro;
 public class Notizen : MonoBehaviour
 {
     private PlayerAR player;
-    public GameObject notiz01, notiz02, notiz03, notiz04, displayBox;
+    public GameObject notiz01, notiz02, notiz03, notiz04, notiz05, displayBox;
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
 
@@ -26,24 +26,35 @@ public class Notizen : MonoBehaviour
                 notiz02.SetActive(false);
                 notiz03.SetActive(false);
                 notiz04.SetActive(false);
+                notiz05.SetActive(false);
                 break;
             case 1:
                 notiz01.SetActive(true);
                 notiz02.SetActive(true);
                 notiz03.SetActive(false);
                 notiz04.SetActive(false);
+                notiz05.SetActive(false);
                 break;
             case 2:
                 notiz01.SetActive(true);
                 notiz02.SetActive(true);
                 notiz03.SetActive(true);
                 notiz04.SetActive(false);
+                notiz05.SetActive(false);
                 break;
             case 3:
                 notiz01.SetActive(true);
                 notiz02.SetActive(true);
                 notiz03.SetActive(true);
                 notiz04.SetActive(true);
+                notiz05.SetActive(false);
+                break;
+            case 4:
+                notiz01.SetActive(true);
+                notiz02.SetActive(true);
+                notiz03.SetActive(true);
+                notiz04.SetActive(true);
+                notiz05.SetActive(true);
                 break;
 
         }

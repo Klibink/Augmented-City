@@ -41,6 +41,20 @@ public class PuzzleGameControl : MonoBehaviour
 
     void finished()
     {
+        //Screen.autorotateToPortrait = true;
+        //Screen.autorotateToPortraitUpsideDown = true;
+        //Screen.orientation = ScreenOrientation.AutoRotation;
         textfield.text = "Interesting! Looks like those are coordinates. K, where do they lead to?";
+
+        GameObject.Find("Loader").GetComponent<PlayerAR>().AddLvl();
+
+        PuzzleSceneManager[] managers = FindObjectsOfType<PuzzleSceneManager>();
+        foreach (PuzzleSceneManager puzzleSceneManager in managers)
+        {
+            if (puzzleSceneManager.gameObject.activeSelf)
+            {
+                puzzleSceneManager.objectTapped(this.gameObject);
+            }
+        }
     }
 }
