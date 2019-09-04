@@ -380,7 +380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4129633654498732578}
   m_Layer: 0
-  m_Name: Tatort Prinz 1
+  m_Name: Tatort Prinz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1092,6 +1092,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.7500002
       objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: 499f1c23091010c499f7c79bd0991ab7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7ab922e8b26c5f44e9e0bb82b370ac77, type: 2}
     - target: {fileID: 400078, guid: 499f1c23091010c499f7c79bd0991ab7, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.146
