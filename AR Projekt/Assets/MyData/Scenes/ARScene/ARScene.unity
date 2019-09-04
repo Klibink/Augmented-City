@@ -178,8 +178,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -75.84124, z: -197.80775, w: -25.393867}
   m_textInfo:
     textComponent: {fileID: 0}
     characterCount: 0
@@ -837,6 +837,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1282503924}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1282503926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1026997606374626, guid: c539aa4fa1bac4b4da61761b0699b48b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1282503924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1388076395
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 105, y: -79}
+  m_AnchoredPosition: {x: 105, y: -99.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1388076397
@@ -961,7 +967,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 22.311798}
   m_textInfo:
     textComponent: {fileID: 1388076397}
     characterCount: 15
@@ -1296,16 +1302,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 99318896}
   sentencesTatort01:
-  - Test01
-  - BTest01
+  - Am Tatort trifft Kommissar Rainer auf seinen Hilfskommissaren Kurt, der schon
+    auf ihn wartet.
+  - "Um die beiden rum ist viel Trubel, da zur Zeit Karneval in K\xF6ln ist."
+  - 'R: Ah Kurt, da bist du ja. Was haben wir denn hier?'
+  - "K: Einen Mordfall und das an Karneval mitten in der Stadt. Ich k\xF6nnte mir
+    nichts sch\xF6neres vorstellen."
+  - "R: Jaja ich wei\xDF, dass du mit Karneval nichts zu tun haben willst, aber kl\xE4r
+    mich lieber auf!"
+  - "K: Ein paar Jugendliche haben ihn heute fr\xFCh entdeckt. Angebunden an zwei
+    Pf\xE4hle. Todesursache unklar, aber es scheint mit der Krone zu tun zu haben.
+    Schau dich mal um!"
   sentencesTatort02:
-  - Test02
-  - BTest02
+  - 'R: Eine Kiste?'
+  - "K: Ja, gesichert mit einer massiven Eisenkette mit Umh\xE4ngeschloss."
+  - "K: Gl\xFCcklicherweise lag direkt daneben ein Schl\xFCssel. Probier mal Sie zu
+    \xF6ffnen!"
+  - "R: Aber wozu der ganze Aufwand? Was will der T\xE4ter von uns?"
+  - 'K: Keine Ahnung, aber ich bin gespannt was wir in der Kiste finden. '
   sentencesTatort03:
-  - Test03
-  - BTest03
+  - 'R: Herr im Himmel, diese Person ist ja noch schlimmer zugerichtet als die Vorherigen.'
+  - "Und woher wusste Kurt, dass ich mich hier umsehen muss und wieso ist er jetzt
+    weg? Habe ich bei der Kiste etwas \xFCbersehen?"
+  - Naja egal, ich sollte mich nach Hinweisen umschauen.
   typingSpeed: 0.02
   continueButton: {fileID: 1388076395}
+  displayBox: {fileID: 809913276}
+  arCoreHelperUI: {fileID: 1282503926}
 --- !u!1 &1695313248
 GameObject:
   m_ObjectHideFlags: 0

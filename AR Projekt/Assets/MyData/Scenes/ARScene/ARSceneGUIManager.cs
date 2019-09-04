@@ -6,11 +6,14 @@ using TMPro;
 public class ARSceneGUIManager : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
+    [TextArea(2,10)]
     public string[] sentencesTatort01, sentencesTatort02, sentencesTatort03;
     private string[] currentSentences;
     private int index;
     public float typingSpeed;
     public GameObject continueButton;
+    public GameObject displayBox;
+    public GameObject arCoreHelperUI;
     private PlayerAR player;
 
     private void Awake()
@@ -71,6 +74,8 @@ public class ARSceneGUIManager : MonoBehaviour
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
+            displayBox.SetActive(false);
+            arCoreHelperUI.SetActive(true);
         }
     }
 }

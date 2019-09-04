@@ -2070,6 +2070,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventorySlot (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1354751118626076594, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8397784331160153386, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2174,11 +2179,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1354751118626076594, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1354751118786430331, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
         type: 3}
@@ -3679,6 +3679,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventorySlot (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1354751118626076594, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8397784331160153386, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3783,11 +3788,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1354751118626076594, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1354751118786430331, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
         type: 3}
@@ -5285,6 +5285,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventorySlot (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1354751118626076594, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8397784331160153386, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5389,11 +5394,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1354751118626076594, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1354751118786430331, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
         type: 3}
@@ -7387,7 +7387,7 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 8558005696660974009, guid: 1f23c429dcc469544ba08969af2f65a8,
+          prefab: {fileID: 768277178778687030, guid: bc66f10244e6c07469693f2dce482cfa,
             type: 3}
           scaleDownWithWorld: 0
         findByType: 2
@@ -7570,7 +7570,7 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 8558005696660974009, guid: 1f23c429dcc469544ba08969af2f65a8,
+          prefab: {fileID: 5585375077023474504, guid: 586868b190fda1e49bd43e49cea39dc6,
             type: 3}
           scaleDownWithWorld: 0
         findByType: 2
@@ -7902,6 +7902,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventorySlot
       objectReference: {fileID: 0}
+    - target: {fileID: 1354751118626076594, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8397784331160153386, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8006,11 +8011,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1354751118626076594, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1354751118786430331, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
         type: 3}
