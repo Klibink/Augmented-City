@@ -21,5 +21,7 @@ Genutzte Tools: - Unity
                 - 3ds Max / Cinema 4d
                 - Trello
 
+Known-Bug: Es kann zu einem Bug in der Szen kommen, wenn man im Dialogfenster zu schnell auf den Continue button drückt
+
 
 Die Geschichte und die in ihr enthaltenen Figuren sind frei erfunden. Keine Karnevalisten oder Tiere wurden während der Projektarbeit verletzt.
