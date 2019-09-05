@@ -28,3 +28,12 @@ Known-Bugs: - Es kann zu einem Bug in der Szene kommen, wenn man im Dialogfenste
 
 Die Geschichte und die in ihr enthaltenen Figuren sind frei erfunden. Keine Karnevalisten oder Tiere wurden während der Projektarbeit verletzt.
 
+![K](https://user-images.githubusercontent.com/35121031/64389698-fdbe3c80-d043-11e9-9584-5bc25796f7ab.jpg)
+
+![Nubbel](https://user-images.githubusercontent.com/35121031/64389712-0d3d8580-d044-11e9-8248-ef85e46c99e3.jpg)
+
+![Tatort_Bauer](https://user-images.githubusercontent.com/35121031/64389714-12023980-d044-11e9-8df5-da68db1ecbbf.jpg)
+
+![Tatort_Jungfrau](https://user-images.githubusercontent.com/35121031/64389717-13cbfd00-d044-11e9-9913-dd6e0f994ee6.jpg)
+
+![Tatort_Prinz](https://user-images.githubusercontent.com/35121031/64389721-162e5700-d044-11e9-9058-550947b9c99c.jpg)
