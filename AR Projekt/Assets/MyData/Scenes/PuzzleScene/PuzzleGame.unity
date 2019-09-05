@@ -843,7 +843,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: hmmm...put together correctly, those glass-pieces might hold a clue
+  m_Text: "hmmm...wenn ich die Scherben richtig zusammensetze m\xFCsste ich sehen
+    k\xF6nnen, was auf ihnen steht"
 --- !u!222 &713311458
 CanvasRenderer:
   m_ObjectHideFlags: 0
