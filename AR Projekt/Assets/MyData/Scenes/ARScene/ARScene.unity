@@ -1127,9 +1127,10 @@ MonoBehaviour:
   DetectedPlanePrefab: {fileID: 1654175882956584, guid: 6a35c744e5010405c847fad90282d2be,
     type: 3}
   AndyPlanePrefab:
-  - {fileID: 8466223659345615632, guid: 059cbceb2edbad34699b638d71c89b0c, type: 3}
+  - {fileID: 5585375077023474504, guid: 586868b190fda1e49bd43e49cea39dc6, type: 3}
   - {fileID: 7988718906971026717, guid: 5b1c51ad87b32c8418d4d4ad05d53985, type: 3}
   - {fileID: 5475689557206832115, guid: e9e1efd8c730a764d86c44a2f1735e98, type: 3}
+  - {fileID: 6830866545091289674, guid: d7b1be39cbd9abc438bc466e171cbc47, type: 3}
   AndyPointPrefab: {fileID: 0}
   index: 0
 --- !u!1001 &1620894913
@@ -1325,6 +1326,9 @@ MonoBehaviour:
   - "Und woher wusste Kurt, dass ich mich hier umsehen muss und wieso ist er jetzt
     weg? Habe ich bei der Kiste etwas \xFCbersehen?"
   - Naja egal, ich sollte mich nach Hinweisen umschauen.
+  sentencesTatort04:
+  - "R: Das Feuer wird gerade entz\xFCndet. Ich muss es stoppen! Wenn meine Vermutung
+    stimmt brennt da gerade keine Puppe, sondern ein Mensch."
   typingSpeed: 0.02
   continueButton: {fileID: 1388076395}
   displayBox: {fileID: 809913276}

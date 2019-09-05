@@ -7,7 +7,7 @@ public class ARSceneGUIManager : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     [TextArea(2,10)]
-    public string[] sentencesTatort01, sentencesTatort02, sentencesTatort03;
+    public string[] sentencesTatort01, sentencesTatort02, sentencesTatort03, sentencesTatort04;
     private string[] currentSentences;
     private int index;
     public float typingSpeed;
@@ -32,6 +32,12 @@ public class ARSceneGUIManager : MonoBehaviour
             case 2:
                 currentSentences = new string[sentencesTatort03.Length];
                 sentencesTatort03.CopyTo(currentSentences, 0);
+                break;
+            case 3:
+                currentSentences = new string[sentencesTatort04.Length];
+                sentencesTatort04.CopyTo(currentSentences, 0);
+                break;
+            default:
                 break;
         }
     }
