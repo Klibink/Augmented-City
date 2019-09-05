@@ -22,12 +22,13 @@ public class movescript : MonoBehaviour
         Vector3 activepos = camera.transform.position;
         if (activepos!=startpos)
         {
-            anim.SetBool("walk",true);
+            Debug.Log("Camera Movement detected");
+            anim.SetBool("move",true);
             startpos = activepos;
         }
         else
         {
-            anim.SetBool("walk", false);
+            anim.SetBool("move", false);
         }
     }
 }
