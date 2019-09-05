@@ -6,11 +6,12 @@ public class TouchHitToggleHydrant : MonoBehaviour
 {
    
     public Material hitMaterial;
+    public bool HydrantHit;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        HydrantHit = false;
     }
 
     // Update is called once per frame
@@ -28,6 +29,7 @@ public class TouchHitToggleHydrant : MonoBehaviour
                     if (rig != null)
                     {
                         rig.GetComponent<MeshRenderer>().material = hitMaterial;
+                        HydrantHit = true;
                     }
                 }
             }

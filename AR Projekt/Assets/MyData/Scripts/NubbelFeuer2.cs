@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class NubbelFeuer2 : MonoBehaviour
 {
-    public GameObject Hydrant;
+    
+    
     public GameObject[] Fire;
-    public Material hitMaterial;
+    public GameObject Hydrant;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+      
     }
 
     // Update is called once per frame
@@ -23,13 +25,19 @@ public class NubbelFeuer2 : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.transform == this.transform)
+                
                 {
-                    if (Hydrant.GetComponent<MeshRenderer>().material = hitMaterial)
+                    if (Hydrant.GetComponent<TouchHitToggleHydrant>().HydrantHit == true)
+                  
+                        
                     {
-                        for (int i = 0; i < Fire.Length; i++)
+                        if (hit.transform == this.transform)
                         {
-                            Fire[i].SetActive(false);
+
+                            for (int i = 0; i < Fire.Length; i++)
+                            {
+                                Fire[i].SetActive(false);
+                            }
                         }
 
                     }
