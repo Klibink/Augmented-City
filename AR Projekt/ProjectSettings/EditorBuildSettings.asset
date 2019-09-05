@@ -11,16 +11,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/MyData/Scenes/SampleScene.unity
     guid: 8ceed935df9e07e45a5c9d2fe4be5226
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyData/Scenes/StartMenu/Start.unity
     guid: 9a388b283b7e63f42b116f50266501cb
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyData/Scenes/StartScene/StartScene.unity
     guid: 6ea0d8e40be2f394aba1bb3d74b09c50
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyData/Scenes/MapScene/MapScene.unity
     guid: f3959874991bd1a49a07b848bbc3de9c
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyData/Scenes/ARScene/ARScene.unity
     guid: aaceb5f7bb3b3f54d8a7c87a48bfd1ae
   - enabled: 1

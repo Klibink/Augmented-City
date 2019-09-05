@@ -10,11 +10,14 @@ public class PuzzleGameControl : MonoBehaviour
     public GameObject Quader;
     public GameObject pieces;
     public GameObject places;
-    public Text textfield;
+    public Text speechfield;
     private int timer = 50;
     // Start is called before the first frame update
     void Start()
     {
+        Screen.autorotateToLandscapeLeft = false;
+        Screen.autorotateToLandscapeRight = false;
+        Screen.orientation = ScreenOrientation.AutoRotation;
         Time.timeScale = 1;
         textSmall.SetActive(true);
     }
@@ -27,10 +30,7 @@ public class PuzzleGameControl : MonoBehaviour
         {
             pieces.SetActive(true);
             Quader.SetActive(true);
-            /*for (int i= 0; i<=places.transform.childCount;i++)
-            {
-               places.gameObject.transform.GetChild(i).gameObject.SetActive(true);
-            }*/
+
             places.SetActive(true);
         }
         if (puzzleScript.locked&&puzzle2Script.locked&&puzzle3Script.locked&&puzzle4Script.locked&&puzzle5Script.locked)
@@ -41,11 +41,7 @@ public class PuzzleGameControl : MonoBehaviour
 
     void finished()
     {
-        //Screen.autorotateToPortrait = true;
-        //Screen.autorotateToPortraitUpsideDown = true;
-        //Screen.orientation = ScreenOrientation.AutoRotation;
-        textfield.text = "Interesting! Looks like those are coordinates. K, where do they lead to?";
-
+        speechfield.text = "Interesting! Looks like those are coordinates. K! '50°55'30.7N/6°55'33.1E', what do those lead us to?";
         GameObject.Find("Loader").GetComponent<PlayerAR>().AddLvl();
 
         PuzzleSceneManager[] managers = FindObjectsOfType<PuzzleSceneManager>();

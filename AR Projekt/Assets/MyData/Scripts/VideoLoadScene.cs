@@ -27,6 +27,9 @@ public class VideoLoadScene : MonoBehaviour
     void EndReached(VideoPlayer vp)
     {
         Screen.autorotateToPortrait = true;
+        Screen.orientation = ScreenOrientation.Portrait;
+        Screen.autorotateToLandscapeLeft = false;
+        Screen.autorotateToLandscapeRight = false;
         //Screen.autorotateToPortraitUpsideDown = true;
         Screen.orientation = ScreenOrientation.AutoRotation;
         SceneManager.LoadScene("StartScene");
