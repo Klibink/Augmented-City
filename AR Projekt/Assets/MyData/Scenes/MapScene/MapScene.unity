@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1822,9 +1822,9 @@ MonoBehaviour:
   itemSlots: []
   itemParent: {fileID: 0}
   possibleSprites:
-  - {fileID: 21300000, guid: 348d4db8bb343ef48924427e3bc6e361, type: 3}
-  - {fileID: 21300000, guid: 6d1b9f058bffd954fa30d6d04fef6787, type: 3}
-  - {fileID: 21300000, guid: 65e35fe8b9b0e844d8ec1071265200fb, type: 3}
+  - {fileID: 21300000, guid: 8eb4fad5222fed847bd831ee368536ce, type: 3}
+  - {fileID: 21300000, guid: b48b439479a91f341a80d4e77ac63623, type: 3}
+  - {fileID: 21300000, guid: af1dab6f1f37c064d8fc606e83288af6, type: 3}
 --- !u!1 &344619396
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,6 +3678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3220431151483575864, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1354751118626076594, guid: f2bf8b27fcf5d8b41bc308a361c1944d,
         type: 3}
