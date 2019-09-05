@@ -28,4 +28,3 @@ Known-Bugs: - Es kann zu einem Bug in der Szene kommen, wenn man im Dialogfenste
 
 Die Geschichte und die in ihr enthaltenen Figuren sind frei erfunden. Keine Karnevalisten oder Tiere wurden während der Projektarbeit verletzt.
 
-![alt text](https://github.com/Klibink/Augmented-City/master/AR-Projekt/Screenshots/Screenshot%20(148).jpg "K")
