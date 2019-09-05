@@ -37,7 +37,7 @@ public class PuzzleGameControl : MonoBehaviour
         }
         if (puzzleScript.locked&&puzzle2Script.locked&&puzzle3Script.locked&&puzzle4Script.locked&&puzzle5Script.locked)
         {
-            speechfield.text = "Interesting! Looks like those are coordinates. '50°55'30.7N/6°55'33.1E', what do those lead us to?";
+            speechfield.text = "Aha Koordinaten! '50°55'30.7N/6°55'33.1E', mal schauen wo sie uns hinführen! Ich habe da schon so eine Ahnung...";
             GameObject.Find("Loader").GetComponent<PlayerAR>().AddLvl();
             Invoke( "finished",3);
         }
