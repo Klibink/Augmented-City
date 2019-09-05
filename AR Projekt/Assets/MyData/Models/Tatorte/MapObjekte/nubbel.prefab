@@ -2011,7 +2011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921e6a1ac419d324fb4d790b174f5c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tatortNummer: 3
+  tatortNummer: 4
 --- !u!114 &7338744833064201617
 MonoBehaviour:
   m_ObjectHideFlags: 0
