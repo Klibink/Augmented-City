@@ -66,6 +66,13 @@ ModelImporter:
     100120: upper_arm_L
     100122: upper_arm_R
     100124: Wooden_Log__Stack_002
+    100126: log1
+    100128: log2
+    100130: log3
+    100132: log4
+    100134: log5
+    100136: log6
+    100138: log7
     400000: BaseMesh_Anim
     400002: Box001
     400004: chest
@@ -129,9 +136,18 @@ ModelImporter:
     400120: upper_arm_L
     400122: upper_arm_R
     400124: Wooden_Log__Stack_002
+    400126: log1
+    400128: log2
+    400130: log3
+    400132: log4
+    400134: log5
+    400136: log6
+    400138: log7
     2100000: No Name
     2100002: _12304_Wooden_Log_Stack_v2_l3Wooden_Log__Stack_1
     2100004: Material
+    2100006: 'Material #3'
+    2100008: 'Material #2'
     2300000: Box001
     2300002: Cylinder001
     2300004: Object001
@@ -144,6 +160,13 @@ ModelImporter:
     2300018: Tube006
     2300020: Tube007
     2300022: Wooden_Log__Stack_002
+    2300024: log1
+    2300026: log2
+    2300028: log3
+    2300030: log4
+    2300032: log5
+    2300034: log6
+    2300036: log7
     3300000: Box001
     3300002: Cylinder001
     3300004: Object001
@@ -156,6 +179,13 @@ ModelImporter:
     3300018: Tube006
     3300020: Tube007
     3300022: Wooden_Log__Stack_002
+    3300024: log1
+    3300026: log2
+    3300028: log3
+    3300030: log4
+    3300032: log5
+    3300034: log6
+    3300036: log7
     4300000: Box001
     4300002: Wooden_Log__Stack_002
     4300004: Object001
@@ -169,6 +199,13 @@ ModelImporter:
     4300020: Tube005
     4300022: Tube006
     4300024: Tube007
+    4300026: log1
+    4300028: log2
+    4300030: log3
+    4300032: log4
+    4300034: log5
+    4300036: log6
+    4300038: log7
     9500000: //RootNode
     13700000: Human_BaseMesh
   externalObjects: {}
