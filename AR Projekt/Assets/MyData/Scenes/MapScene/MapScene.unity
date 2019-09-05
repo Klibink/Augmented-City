@@ -1995,7 +1995,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416428892}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5055589b212e5540aeac25abddfff45, type: 3}
   m_Name: 
@@ -5581,7 +5581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1707858128
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7637,12 +7637,12 @@ MonoBehaviour:
         categories: -1
         nameString: 
         coordinates:
-        - 50.928018, 6.927995
+        - '50.928097, 6.928477 '
         density: 15
       - coreOptions:
           sourceId: 
           isActive: 1
-          sublayerName: New Location
+          sublayerName: Bibliothek
           geometryType: 0
           layerName: 
           snapToTerrain: 1
@@ -7698,12 +7698,12 @@ MonoBehaviour:
         categories: -1
         nameString: 
         coordinates:
-        - 50.927525, 6.927202
+        - '50.925912, 6.928962 '
         density: 15
       - coreOptions:
           sourceId: 
           isActive: 1
-          sublayerName: Dummy
+          sublayerName: RRZK
           geometryType: 0
           layerName: 
           snapToTerrain: 1
@@ -7759,12 +7759,12 @@ MonoBehaviour:
         categories: -1
         nameString: 
         coordinates:
-        - 50.927607, 6.927805
+        - '50.926781, 6.925156 '
         density: 15
       - coreOptions:
           sourceId: 
           isActive: 1
-          sublayerName: New Location
+          sublayerName: "Arch\xE4opool"
           geometryType: 0
           layerName: 
           snapToTerrain: 1
@@ -7813,18 +7813,18 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 768277178778687030, guid: bc66f10244e6c07469693f2dce482cfa,
+          prefab: {fileID: 5903462684194181595, guid: 8998b81c6ee279d4c9c62c4f3105d8d7,
             type: 3}
           scaleDownWithWorld: 0
         findByType: 2
         categories: -1
         nameString: 
         coordinates:
-        - 50.826822, 6.897053
+        - '50.925400, 6.925982 '
         density: 15
       - coreOptions:
           sourceId: 
-          isActive: 1
+          isActive: 0
           sublayerName: New Location
           geometryType: 0
           layerName: 
@@ -7885,7 +7885,7 @@ MonoBehaviour:
         density: 15
       - coreOptions:
           sourceId: 
-          isActive: 1
+          isActive: 0
           sublayerName: New Location
           geometryType: 0
           layerName: 
@@ -7946,7 +7946,7 @@ MonoBehaviour:
         density: 15
       - coreOptions:
           sourceId: 
-          isActive: 1
+          isActive: 0
           sublayerName: Nubbel
           geometryType: 0
           layerName: 
@@ -8007,7 +8007,7 @@ MonoBehaviour:
         density: 15
       - coreOptions:
           sourceId: 
-          isActive: 1
+          isActive: 0
           sublayerName: New Location
           geometryType: 0
           layerName: 

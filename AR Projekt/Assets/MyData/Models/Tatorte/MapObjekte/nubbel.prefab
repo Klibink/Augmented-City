@@ -1933,6 +1933,7 @@ GameObject:
   - component: {fileID: 8542623276443373322}
   - component: {fileID: 3305775302469708807}
   - component: {fileID: 7338744833064201617}
+  - component: {fileID: 2497614850904327301}
   m_Layer: 0
   m_Name: nubbel
   m_TagString: Untagged
@@ -2006,7 +2007,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5903462684194181595}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 921e6a1ac419d324fb4d790b174f5c0d, type: 3}
   m_Name: 
@@ -2026,6 +2027,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rend: []
   collider: {fileID: 0}
+--- !u!114 &2497614850904327301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5903462684194181595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4528c1383e963fa4cb9ebeb9b7a16411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tatortNummer: 4
 --- !u!1 &5903462684194181597
 GameObject:
   m_ObjectHideFlags: 0

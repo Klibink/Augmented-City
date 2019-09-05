@@ -1130,7 +1130,7 @@ MonoBehaviour:
   - {fileID: 421533198394830832, guid: e18c4c233b4823446bff6077b0453db8, type: 3}
   - {fileID: 7988718906971026717, guid: 5b1c51ad87b32c8418d4d4ad05d53985, type: 3}
   - {fileID: 5475689557206832115, guid: e9e1efd8c730a764d86c44a2f1735e98, type: 3}
-  - {fileID: 4960557953804195290, guid: 20261ad9c6326e44ea86ef67bcf061e3, type: 3}
+  - {fileID: 5516457928126224561, guid: b5d9d336a6dd974429e94d341ce8d1a8, type: 3}
   AndyPointPrefab: {fileID: 0}
   index: 0
 --- !u!1001 &1620894913
@@ -1303,24 +1303,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 99318896}
   sentencesTatort01:
-  - Am Tatort trifft Kommissar Rainer auf seinen Hilfskommissaren Kurt, der schon
-    auf ihn wartet.
-  - "Um die beiden rum ist viel Trubel, da zur Zeit Karneval in K\xF6ln ist."
+  - "Kurt wartet bereits am Tatort - ein \xE4u\xDFerst seltener Umstand. "
+  - "Normalerweise muss sich Rainers Kollege bitten lassen, bevor er einen Finger
+    r\xFChrt."
   - 'R: Ah Kurt, da bist du ja. Was haben wir denn hier?'
   - "K: Einen Mordfall und das an Karneval mitten in der Stadt. Ich k\xF6nnte mir
     nichts sch\xF6neres vorstellen."
   - "R: Jaja ich wei\xDF, dass du mit Karneval nichts zu tun haben willst, aber kl\xE4r
     mich lieber auf!"
-  - "K: Ein paar Jugendliche haben ihn heute fr\xFCh entdeckt. Angebunden an zwei
-    Pf\xE4hle. Todesursache unklar, aber es scheint mit der Krone zu tun zu haben.
-    Schau dich mal um!"
+  - "K: Ein paar Jugendliche haben ihn heute fr\xFCh entdeckt. Schau dich mal um!"
   sentencesTatort02:
   - 'R: Eine Kiste?'
   - "K: Ja, gesichert mit einer massiven Eisenkette mit Umh\xE4ngeschloss."
   - "K: Gl\xFCcklicherweise lag direkt daneben ein Schl\xFCssel. Probier mal Sie zu
     \xF6ffnen!"
   - "R: Aber wozu der ganze Aufwand? Was will der T\xE4ter von uns?"
-  - 'K: Keine Ahnung, aber ich bin gespannt was wir in der Kiste finden. '
+  - 'K: Keine Ahnung, mach einfach die Kiste auf!'
   sentencesTatort03:
   - 'R: Herr im Himmel, diese Person ist ja noch schlimmer zugerichtet als die Vorherigen.'
   - "Und woher wusste Kurt, dass ich mich hier umsehen muss und wieso ist er jetzt

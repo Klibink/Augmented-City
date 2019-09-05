@@ -37,7 +37,13 @@ public class ARSceneGUIManager : MonoBehaviour
                 currentSentences = new string[sentencesTatort04.Length];
                 sentencesTatort04.CopyTo(currentSentences, 0);
                 break;
+            case 4:
+                currentSentences = new string[sentencesTatort04.Length];
+                sentencesTatort04.CopyTo(currentSentences, 0);
+                break;
             default:
+                currentSentences = new string[sentencesTatort04.Length];
+                sentencesTatort04.CopyTo(currentSentences, 0);
                 break;
         }
     }

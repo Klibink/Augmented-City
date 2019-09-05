@@ -47,7 +47,8 @@ public class PuzzleGameControl : MonoBehaviour
 
     void finished()
     {
-        GameObject.Find("Loader").GetComponent<PlayerAR>().AddLvl();
+        GameObject.Find("Loader").GetComponent<PlayerAR>().lvl = 4;
+        GameObject.Find("Loader").GetComponent<PlayerAR>().currentTatort = 3;
 
         PuzzleSceneManager[] managers = FindObjectsOfType<PuzzleSceneManager>();
         foreach (PuzzleSceneManager puzzleSceneManager in managers)
