@@ -9,7 +9,7 @@ public class ARSceneGUIManager : MonoBehaviour
     [TextArea(2,10)]
     public string[] sentencesTatort01, sentencesTatort02, sentencesTatort03, sentencesTatort04;
     private string[] currentSentences;
-    private int index;
+    private int index=0;
     public float typingSpeed;
     public GameObject continueButton;
     public GameObject displayBox;

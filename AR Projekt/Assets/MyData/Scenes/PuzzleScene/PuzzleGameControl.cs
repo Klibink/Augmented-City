@@ -26,6 +26,7 @@ public class PuzzleGameControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(GameObject.Find("Loader").GetComponent<PlayerAR>().lvl);
         timer --;
         if(timer<=0)
         {
@@ -36,14 +37,15 @@ public class PuzzleGameControl : MonoBehaviour
         }
         if (puzzleScript.locked&&puzzle2Script.locked&&puzzle3Script.locked&&puzzle4Script.locked&&puzzle5Script.locked)
         {
-            finished();
+            speechfield.text = "Interesting! Looks like those are coordinates. '50°55'30.7N/6°55'33.1E', what do those lead us to?";
+            GameObject.Find("Loader").GetComponent<PlayerAR>().AddLvl();
+            Invoke( "finished",3);
         }
     }
 
     void finished()
     {
-        speechfield.text = "Interesting! Looks like those are coordinates. K! '50°55'30.7N/6°55'33.1E', what do those lead us to?";
-        GameObject.Find("Loader").GetComponent<PlayerAR>().AddLvl();
+        
 
         PuzzleSceneManager[] managers = FindObjectsOfType<PuzzleSceneManager>();
         foreach (PuzzleSceneManager puzzleSceneManager in managers)

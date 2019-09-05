@@ -56,6 +56,13 @@ public class Notizen : MonoBehaviour
                 notiz04.SetActive(true);
                 notiz05.SetActive(true);
                 break;
+            default:
+                notiz01.SetActive(true);
+                notiz02.SetActive(true);
+                notiz03.SetActive(true);
+                notiz04.SetActive(true);
+                notiz05.SetActive(true);
+                break;
 
         }
     }
