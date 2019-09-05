@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Script setzt InventarObjecte sobald diese in der AR-Szene gefunden wurden
+
+
 public class Beweise : MonoBehaviour
 {
     public GameObject[] tatortFunde;

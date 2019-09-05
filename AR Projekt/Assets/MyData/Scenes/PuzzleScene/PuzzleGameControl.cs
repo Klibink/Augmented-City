@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+//Script changes Viewport & checks status of puzzle, when finished it will trigger the new text
+
 public class PuzzleGameControl : MonoBehaviour
 {
     [SerializeField]

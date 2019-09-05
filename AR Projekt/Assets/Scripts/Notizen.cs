@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// Notizen im Notizbuch werden je nach Level des Spielers auf sichtbar, oder nicht sichtbar gesetzt
+
 public class Notizen : MonoBehaviour
 {
     private PlayerAR player;
