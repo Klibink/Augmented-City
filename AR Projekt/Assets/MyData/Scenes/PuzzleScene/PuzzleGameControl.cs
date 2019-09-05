@@ -15,6 +15,7 @@ public class PuzzleGameControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Screen.orientation = ScreenOrientation.Portrait;
         Screen.autorotateToLandscapeLeft = false;
         Screen.autorotateToLandscapeRight = false;
         Screen.orientation = ScreenOrientation.AutoRotation;
